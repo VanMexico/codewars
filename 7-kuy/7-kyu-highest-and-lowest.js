@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 
-// the original solution
-function highAndLowOriginal(numbers) {
+// my solution
+function myHighAndLow(numbers) {
   numbers = numbers
     .split(' ')
     .map((number) => +number)
@@ -10,8 +10,8 @@ function highAndLowOriginal(numbers) {
   return `${numbers[numbers.length - 1]} ${numbers[0]}`
 }
 
-// the optimal solution
-function highAndLowOptimal(numbers) {
+// popular solution
+function popularHighAndLow(numbers) {
   numbers = numbers.split(' ')
   return `${Math.max(...numbers)} ${Math.min(...numbers)}`
 }
